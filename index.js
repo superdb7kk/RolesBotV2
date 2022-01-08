@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS']});
 
-let channelId = "925796661429690379";
+let channelId = "916712887723130890";
 let geraId = "733999941302878229";
 let d = new Date();
 
@@ -51,7 +51,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
             if (earlyBearsSum < 500) {
                 try {
                     newMember.roles.add("918910770312536177");
-                    sendEmb(newMember.id, "Early Bear ");
+                    sendMes(newMember.id, "Early Bear ");
                 } catch(err) {
                     console.log(err);
                 }
@@ -59,7 +59,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
             } else if (fastBearsSum < 500) {
                 try {
                     newMember.roles.add("923258346184773722");
-                    sendEmb(newMember.id, "Fast Bear ");
+                    sendMes(newMember.id, "Fast Bear ");
                 } catch(err) {
                     console.log(err);
                 }
@@ -67,7 +67,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
             } else if (punctualBearsSum < 500) {
                 try {
                     newMember.roles.add("923258396763914271");
-                    sendEmb(newMember.id, "Punctual Bear ");
+                    sendMes(newMember.id, "Punctual Bear ");
                 } catch(err) {
                     console.log(err);
                 }
@@ -110,14 +110,7 @@ function check(newMember) {
 
 
 
-function sendEmb(id, roleName) {
-
-    const onRoleAdd = new MessageEmbed()
-	.setColor('#21f248')
-	.setTitle('ROLES BOT UPDATE')
-    .setDescription('Hey, ' + '<@' + id + '>! You have just got ' + roleName + ' role!')	
-    ;
-    
+function sendMes(id, roleName) {    
     
     console.log(d.toString());
     console.log("id " + id +  " gets " + roleName + " role");
