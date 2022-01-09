@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Discord = require('discord.js');
 const { MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS']});
@@ -121,4 +122,4 @@ function sendMes(id, roleName) {
 }
 
 
-client.login("OTI3MjM1ODEwNzYyMzIxOTUw.YdHRpA.M590VFmiDxU3eKEBnP057sUQKSQ");
+client.login(process.env.DISCORD_TOKEN);
