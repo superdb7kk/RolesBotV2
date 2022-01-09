@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { MessageAttachment, MessageEmbed } = require('discord.js');
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS']});
 
-let channelId = "916712887723130890";
+let channelId = "925796661429690379";
 let geraId = "733999941302878229";
 let d = new Date();
 
@@ -121,4 +121,4 @@ function sendMes(id, roleName) {
 }
 
 
-client.login("OTI3MjM1ODEwNzYyMzIxOTUw.YdHRpA.HIu4hUBlC_JyrwlmKyvFrhmFQ-s");
+client.login("OTI3MjM1ODEwNzYyMzIxOTUw.YdHRpA.m3-CWJNLHx0Y533pgomCUkn9gWk");
